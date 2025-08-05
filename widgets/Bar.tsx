@@ -7,6 +7,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
 	const time = createPoll("", 1000, "date")
 	const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
+	/* eslint-disable react/react-in-jsx-scope, react/no-unknown-property */
 	return (
 		<window
 			visible
@@ -35,5 +36,6 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
 				</menubutton>
 			</centerbox>
 		</window>
+		/* eslint-enable */
 	)
 }
